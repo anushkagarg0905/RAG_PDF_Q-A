@@ -221,21 +221,12 @@ All parameters are defined as constants at the top of Cell 3.
 
 These are the improvements I've identified and would implement given more time or resources:
 
-### 🔧 Short-Term
 - [ ] **OCR Support** — Integrate `pytesseract` or `easyocr` to handle scanned/image-only PDFs
 - [ ] **Persistent Storage** — Replace in-memory ChromaDB with a persistent client so indexes survive Colab session resets
 - [ ] **Multi-PDF Support** — Allow indexing multiple PDFs simultaneously with per-source filtering
-
-### 🚀 Medium-Term
-- [ ] **Reranking Layer** — Add a cross-encoder reranker (e.g., `ms-marco-MiniLM`) on top of the hybrid retriever for higher precision
 - [ ] **Query Expansion** — Use the LLM to rewrite or expand the user's query before retrieval (HyDE — Hypothetical Document Embeddings)
 - [ ] **Gradio / Streamlit UI** — Replace the CLI with a web interface so the project is accessible without terminal familiarity
-- [ ] **Metadata Filtering** — Filter retrieval by page range, section heading, or date extracted from PDF structure
-
-### 🌐 Long-Term / Production
-- [ ] **FastAPI Backend** — Expose the RAG pipeline as a REST API so it can be consumed by web or mobile frontends
 - [ ] **Docker Container** — Package Ollama + the RAG engine into a single Docker image for one-command local deployment
-- [ ] **Evaluation Framework** — Integrate [RAGAS](https://github.com/explodinggradients/ragas) to measure answer faithfulness, context precision and recall automatically
 - [ ] **Fine-tuned Embeddings** — Replace ChromaDB's default sentence-transformers with a domain-specific embedding model fine-tuned on the target document type
 - [ ] **Conversation Memory** — Add multi-turn support so follow-up questions ("And what about that in Chapter 3?") carry context from previous turns
 
