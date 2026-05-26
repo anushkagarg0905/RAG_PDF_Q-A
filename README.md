@@ -251,23 +251,6 @@ This project gave me hands-on experience with concepts that are directly applica
 - Confidence scores and source grounding aren't optional extras, they are essential for users to trust and correctly use an AI system
 - Hallucination risk visualisation gives non-technical users a mental model for when to trust the output
 
----
 
-## 📁 Project Structure
-
-```
-RAG_Pdf_Q_A.ipynb          # Main notebook 
-RAG_Agent_Project_Documentation.docx  # Full technical documentation
-README.md                  # This file
-```
-
----
-
-## 🙏 Acknowledgements
-
-- [Ollama](https://ollama.com) — for making local LLM serving accessible
-- [ChromaDB](https://www.trychroma.com) — for the excellent open-source vector database
-- [TinyLLaMA](https://github.com/jzhang38/TinyLlama) — for the 1.1B parameter model
-- [rank_bm25](https://github.com/dorianbrown/rank_bm25) — for the BM25 implementation
 
 </div>
