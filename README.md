@@ -1,4 +1,4 @@
-# 📄 RAG PDF Question-Answering Agent
+# RAG PDF Question-Answering Agent
 
 <div align="center">
 
@@ -17,7 +17,7 @@
 
 ---
 
-## 🧠 What Is This?
+## What Is This?
 
 This project implements a production-pattern **RAG pipeline** entirely within Google Colab. You upload a PDF, the system indexes it using a dual retrieval strategy (BM25 keyword search + ChromaDB semantic vector search), and a lightweight local LLM (TinyLLaMA 1.1B via Ollama) generates grounded, cited answers.
 
@@ -29,7 +29,7 @@ Every response comes with:
 
 ---
 
-## ✨ Features
+##  Features
 
 | Feature | Description |
 |---|---|
@@ -41,7 +41,7 @@ Every response comes with:
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 ```
 ┌──────────────────────────────────────────────────────────────────────┐
@@ -93,7 +93,7 @@ The BM25 model performs well for keyword matching. On the other hand, the vector
 
 ---
 
-## 📸 Demo
+## Demo
 
 ### Asking a Question — Full RAG Pipeline in Action
 ![Question & Answer with Hybrid Search](images/1.jpg)
@@ -117,7 +117,7 @@ The BM25 model performs well for keyword matching. On the other hand, the vector
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 
@@ -173,7 +173,7 @@ You > /exit
 
 ---
 
-## ⚙️ Configuration
+##  Configuration
 
 All parameters are defined as constants at the top of Cell 3. 
 
@@ -191,7 +191,7 @@ All parameters are defined as constants at the top of Cell 3.
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Technology | Version | Role |
 |---|---|---|
@@ -207,7 +207,7 @@ All parameters are defined as constants at the top of Cell 3.
 
 ---
 
-## ⚠️ Known Limitations
+##  Known Limitations
 
 - **Model capability**: TinyLLaMA (1.1B) has limited multi-step reasoning. For complex analytical questions, swap `MODEL_NAME` to `mistral` (7B).
 - **Scanned PDFs**: `pypdf` extracts machine-readable text only. Image-only PDFs return no content. OCR is not included in this version.
@@ -217,7 +217,7 @@ All parameters are defined as constants at the top of Cell 3.
 
 ---
 
-## 🗺️ Roadmap — Future Implementations
+## Roadmap — Future Implementations
 
 These are the improvements I've identified and would implement given more time or resources:
 
@@ -232,7 +232,7 @@ These are the improvements I've identified and would implement given more time o
 
 ---
 
-## 📚 What I Learned
+## What I Learned
 
 This project gave me hands-on experience with concepts that are directly applicable to production ML systems:
 
